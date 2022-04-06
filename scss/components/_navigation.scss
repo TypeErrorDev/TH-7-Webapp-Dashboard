@@ -1,0 +1,36 @@
+@use "../utilities" as *;
+
+.nav-bar {
+  height: 50px;
+  width: 320px;
+  background-color: $dark-purple;
+}
+// TOP BAR GENERAL STYLES
+
+.top-container {
+  color: $white;
+  background-color: $light-purple;
+  height: 60px;
+  width: 320px;
+}
+
+.vl {
+  width: 1px;
+  height: 35px;
+  background-color: $dark-gray;
+  margin-left: 10px;
+}
+.top-container,
+.left-top,
+.right-top {
+  @include flex-row;
+}
+.left-top,
+.right-top {
+  font-size: 0.6rem;
+  @include flex-row;
+  align-items: center;
+}
+#s-name {
+  margin-left: 15px;
+}

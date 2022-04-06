@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+* {
+  font-family: "Rajdhani", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+}
+
+@keyframes hideshow {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#top-pfp {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  margin-left: -20px;
+}
+
+.bell-icon {
+  fill: #fff;
+  margin-left: 25px;
+}
+
+svg:hover circle {
+  animation: hideshow 3s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.nav-svg-icons {
+  height: 50px;
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  fill: #fff;
+  align-items: center;
+  margin: auto;
+}
+
+.nav-bar {
+  height: 50px;
+  width: 320px;
+  background-color: #4d4c72;
+}
+
+.top-container {
+  color: #fff;
+  background-color: #7477bf;
+  height: 60px;
+  width: 320px;
+}
+
+.vl {
+  width: 1px;
+  height: 35px;
+  background-color: #939393;
+  margin-left: 10px;
+}
+
+.top-container,
+.left-top,
+.right-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.left-top,
+.right-top {
+  font-size: 0.6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#s-name {
+  margin-left: 15px;
+}
+
+/* ============================================= */
+/* Sub-Folder Imports */
+/* ============================================= */
+
+/*# sourceMappingURL=styles.css.map */
