@@ -16,10 +16,21 @@ body {
     opacity: 1;
   }
   50% {
-    opacity: 0.4;
+    opacity: 0.2;
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes bell-wiggle {
+  0% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(-2deg);
   }
 }
 #top-pfp {
@@ -30,8 +41,14 @@ body {
 }
 
 .bell-icon {
+  display: block;
   fill: #fff;
   margin-left: 25px;
+}
+
+svg:hover[class=bell-icon] {
+  animation: 1s infinite ease-in-out bell-wiggle;
+  animation-iteration-count: infinite;
 }
 
 svg:hover circle {

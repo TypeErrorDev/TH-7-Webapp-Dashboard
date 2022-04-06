@@ -1,14 +1,26 @@
 @use "../utilities" as *;
 
-// Bell Icon Keyframes
+// Notification Dot Keyframes
 @keyframes hideshow {
   0% {
     opacity: 1;
   }
   50% {
-    opacity: 0.4;
+    opacity: 0.2;
   }
   100% {
     opacity: 1;
+  }
+}
+// Bell Icon Keyframes
+@keyframes bell-wiggle {
+  0% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(-2deg);
   }
 }

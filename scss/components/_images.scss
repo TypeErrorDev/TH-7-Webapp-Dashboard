@@ -8,13 +8,21 @@
   margin-left: -20px;
 }
 .bell-icon {
+  display: block;
   fill: $white;
   margin-left: 25px;
 }
+
+svg:hover[class="bell-icon"] {
+  animation: 1s infinite ease-in-out bell-wiggle;
+  animation-iteration-count: infinite;
+}
+
 svg:hover circle {
   animation: hideshow 3s ease-in-out;
   animation-iteration-count: infinite;
 }
+
 .nav-svg-icons {
   height: 50px;
   width: 250px;
