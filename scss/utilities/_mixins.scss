@@ -5,14 +5,30 @@
   justify-content: space-around;
   align-items: center;
 }
-@mixin flex-row-center{
+@mixin flex-row-center {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
 // GRID
-@mixin grid-row{
+@mixin grid-row {
   display: grid;
   gap: 0;
+}
+
+// TRAFFIC BUTTON
+@mixin traffic-btn {
+  padding: 5px;
+  border-radius: 30px;
+  background-color: #5fcf80;
+}
+
+// WIDTHS FOR CONTAINERS BASED ON MEDIA QUERIES
+@mixin tablet {
+  width: 768px;
+}
+
+@mixin desktop {
+  width: 1024;
 }

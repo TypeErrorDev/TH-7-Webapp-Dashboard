@@ -1,1 +1,41 @@
 @use "../utilities" as *;
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(3, auto);
+    grid-template-areas: "header header", "nav main";
+  }
+  .grid-header {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  .grid-nav {
+    width: 75px;
+    height: auto;
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+  }
+  .grid-nav:nth-child(1n + 1) {
+    grid-column: 1;
+  }
+  .grid-main {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;
+  }
+  .nav-svg-icons {
+    display: flex;
+    flex-direction: column;
+    max-width: 50px;
+    height: auto;
+  }
+  svg[id^="#"] {
+    margin-top: 20px;
+  }
+}

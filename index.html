@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>WebApp</title>
   </head>
-  <body>
+  <body class="grid-container">
     <!-- TOP BAR CONTAINER -->
-    <header>
-      <div class="top-container grid-top-bar">
+    <header class="grid-header">
+      <div class="top-container">
         <div class="left-top">
           <h1 id="logo">WebApp&trade;</h1>
           <!--  -->
@@ -37,7 +37,7 @@
     </header>
 
     <!-- NAV BAR CONTAINER -->
-    <nav class="nav-bar">
+    <nav class="grid-nav">
       <div class="nav-svg-icons">
         <svg
           class="home-icon"
@@ -98,7 +98,7 @@
     </nav>
 
     <!-- START OF THE DASHBOARD TAB DIV -->
-    <main>
+    <main class="grid-main">
       <div class="db-container">
         <div class="dashboard-tab">
           <h3 id="db-title">Dashboard</h3>
@@ -107,28 +107,148 @@
       </div>
 
       <!-- ALERT BOX CONTAINER -->
-      <div class="alert-box">
-        <p id="alert-text">Alert: You have unread messages</p>
-        <p id="alert-close">x</p>
+      <div class="alert" id="alert">
+        <!-- <p id="alert-text">Alert: You have unread messages</p>
+        <p id="alert-close">x</p> -->
       </div>
 
-      <!-- TRAFFIC H/D/W/M LINE CHART -->
-      <div class="chart-btn">
-        <h2>TRAFFIC</h2>
-        <ul>
-          <li>Hourly</li>
-          <li>Daily</li>
-          <li>Weekly</li>
-          <li>Monthly</li>
-        </ul>
+      <!-- TRAFFIC LINE CHART -->
+      <section class="traffic">
+        <div class="traffic-header">
+          <h3>Traffic</h3>
+          <ul class="traffic-nav">
+            <li class="traffic-nav-link">Hourly</li>
+            <li class="traffic-nav-link">Daily</li>
+            <li class="traffic-nav-link active">Weekly</li>
+            <li class="traffic-nav-link">Monthly</li>
+          </ul>
+        </div>
+        <div class="widget-container-full">
+          <!-- element line graph will attach to -->
+          <img class="line-chart" src="images/placeholder-line.jpg" />
+          <!-- <canvas id="traffic-chart">
+            
+          </canvas> -->
+        </div>
+      </section>
+
+      <!-- DAILY TRAFFIC COLUMN CHART -->
+      <section class="daily">
+        <h3>Daily Traffic</h3>
+        <div class="widget-container-half">
+          <img class="column-chart" src="images/placeholder-column.jpg" />
+          <!-- <canvis id="daily-chart"></canvis> -->
+        </div>
+      </section>
+
+      <!-- MOBILE USER DONUT CHART -->
+      <section class="daily">
+        <h3>Mobile Users</h3>
+        <div class="widget-container-half">
+          <img class="donut-chart" src="images/placeholder-donut.jpg" />
+          <!-- <canvis id="daily-chart"></canvis> -->
+        </div>
+      </section>
+
+      <!-- SOCIAL STATUS -->
+      <div class="social-container">
+        <div class="social-image"></div>
+        <div class="social-text">
+          <p>Twitter</p>
+          <p>10,345</p>
+        </div>
+        <div class="social-text">
+          <p>Twitch</p>
+          <p>700</p>
+        </div>
+        <div class="social-text">
+          <p>Pintrest</p>
+          <p>10,345,676</p>
+        </div>
       </div>
-      <!--  H2 TRAFFIC
-              UL
-                LI HOURLY
-                LI DAILY
-                LI WEEKLY
-                LI MONTHLY
- -->
+
+      <!-- NEW MEMBER SECTION -->
+      <section class="members">
+        <h3>New Members</h3>
+        <div class="members-container">
+          <img src="images/member-1.jpg" alt="" class="profile-image" />
+          <div class="members-text">
+            <p>Victoria Chambers</p>
+            <a href="#">victoria.chambers80@nomail.com</a>
+          </div>
+          <p>10/15/2022</p>
+        </div>
+      </section>
+      <section class="members">
+        <div class="members-container">
+          <img src="images/member-2.jpg" alt="" class="profile-image" />
+          <div class="members-text">
+            <p>Dale Byrd</p>
+            <a href="#">dale.byrd52@aol.com</a>
+          </div>
+          <p>08/15/2022</p>
+        </div>
+      </section>
+      <section class="members">
+        <div class="members-container">
+          <img src="images/member-3.jpg" alt="" class="profile-image" />
+          <div class="members-text">
+            <p>Dawn Wood</p>
+            <a href="#">dawn.wood16@msn.com</a>
+          </div>
+          <p>10/01/2022</p>
+        </div>
+      </section>
+      <section class="members">
+        <div class="members-container">
+          <img src="images/member-4.jpg" alt="" class="profile-image" />
+          <div class="members-text">
+            <p>Dan Oliver</p>
+            <a href="#">dan.oliver82@netscape.com</a>
+          </div>
+          <p>09/15/2022</p>
+        </div>
+      </section>
+
+      <!-- MESSAGE FORM -->
+      <section class="message">
+        <h3>Message User</h3>
+        <form class="message-container">
+          <input
+            type="text"
+            placeholder="Search for user"
+            id="userField"
+            class="form-field"
+          />
+          <textarea
+            placeholder="Message the user"
+            id="messageField"
+            cols="30"
+            rows="10"
+            class="form-area"
+          ></textarea>
+          <button class="button-primary" id="send">Send</button>
+        </form>
+      </section>
+
+      <!-- SETTINGS SECTION -->
+      <section class="settings">
+        <h3>Settings</h3>
+
+        <!-- CSS TOGGLE -->
+        <!-- CSS TOGGLE -->
+
+        <select name="" id="timezone" class="form-field">
+          <option disabled selected>Select a Timezone</option>
+          <option>Pacific Standard Time</option>
+          <option>Mountain Standard Time</option>
+          <option>Eastern Standard Time</option>
+        </select>
+        <div class="settings-button">
+          <button class="button-primary" id="save">Save</button>
+          <button class="button-disabled" id="cancel">Cancel</button>
+        </div>
+      </section>
 
       <!-- <div class="chart-div">
         <canvas id="myChart"></canvas>

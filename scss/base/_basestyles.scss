@@ -14,7 +14,19 @@
   padding: 0;
 }
 
-body {
+.grid-container {
   display: grid;
-  width: 320px;
+  width: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas: "header" "nav" "main";
+}
+.grid-header {
+  grid-area: "header";
+}
+.grid-nav {
+  grid-area: "nav";
+}
+.grid-main {
+  grid-area: "main";
 }

@@ -1,8 +1,9 @@
 @use "../utilities" as *;
 
-// TRAFFIC TITLE AND BUTTONS
-.chart-btn {
-}
-.chart-btn h2 {
-  font-family: $secondary-font;
+.line-chart,
+.column-chart,
+.donut-chart {
+  width: 320px;
+  height: 150px;
+  outline: 1px solid red;
 }
