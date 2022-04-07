@@ -1,6 +1,12 @@
-// flex
+// FLEXBOX
 @mixin flex-row {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+// GRID
+@mixin grid-row{
+  display: grid;
+  gap: 0;
 }
