@@ -1,3 +1,8 @@
 @use "../utilities" as *;
-// .dashboard-tab {
-// }
+
+// TRAFFIC TITLE AND BUTTONS
+.chart-btn {
+}
+.chart-btn h2 {
+  font-family: $secondary-font;
+}

@@ -1,6 +1,5 @@
 @use "../utilities" as *;
 
-
 // TOP BAR GENERAL STYLES
 
 .top-container {
@@ -23,7 +22,7 @@
 }
 .left-top,
 .right-top {
-  font-size: $main-font-size;
+  font-size: $header-font-size;
   @include flex-row;
   align-items: center;
 }
@@ -39,25 +38,40 @@
 }
 
 // DASHBOARD TAB STYLES
-.db-container{
-@include flex-row; 
-
+.db-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 320px;
 }
-.empty-db{
+.empty-db {
   background-color: #dededb;
   // outline: 1px solid red;
-  width: 220px;
+  width: 230px;
   height: 50px;
   border-bottom: 1px solid rgba(169, 169, 169, 0.614);
-  
 }
 
-#db-title{
+#db-title {
   // outline: 1px solid red;
   font-size: 1rem;
-  width: 110px;
+  width: 100px;
   height: 50px;
   border-right: 1px solid rgba(169, 169, 169, 0.614);
   @include flex-row;
-  align-items: center;
+}
+
+.alert-box {
+  background-color: $light-purple;
+  font-size: $para-font-size;
+  color: $white;
+  @include flex-row;
+  width: 270px;
+  height: 25px;
+  border-radius: 5px;
+  margin: 10px 30px 0 25px;
+}
+
+#alert-close {
+  margin-left: 50px;
 }
