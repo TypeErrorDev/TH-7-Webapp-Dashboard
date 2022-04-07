@@ -14,14 +14,14 @@
 }
 
 svg:hover[class="bell-icon"] {
-  animation: 1s infinite ease-in-out bell-wiggle;
+  animation: .1s infinite ease-in-out bell-wiggle;
   animation-iteration-count: infinite;
 }
 
 svg:hover circle {
   animation: hideshow 3s ease-in-out;
   animation-iteration-count: infinite;
-}
+} 
 
 .nav-svg-icons {
   height: 50px;
