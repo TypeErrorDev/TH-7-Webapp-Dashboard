@@ -1,6 +1,6 @@
 @use "../utilities" as *;
 
-@media (min-width: 768px) {
+@media ($tablet) {
   .grid-container {
     grid-template-columns: repeat(3, auto);
     grid-template-areas: "header header", "nav main";
@@ -39,3 +39,8 @@
     margin-top: 20px;
   }
 }
+
+// .traffic,
+// .social {
+//   grid-column: 1 / span 2;
+// }

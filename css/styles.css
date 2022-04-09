@@ -32,6 +32,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 5px 5px;
+  outline: 1px solid red;
 }
 
 .chart-btn h2 {
@@ -44,24 +45,30 @@
   justify-content: space-between;
 }
 
-.chart-list button {
+.traffic-nav li {
   list-style: none;
   margin: 5px 0 0 0;
   padding: 3px;
   border: none;
   background-color: #fff;
 }
-.chart-list button:first-child {
+.traffic-nav li:first-child {
   padding: 5px;
   border-radius: 30px;
   background-color: #5fcf80;
   color: #fff;
 }
-.chart-list button:active {
+.traffic-nav li:active {
   padding: 5px;
   border-radius: 30px;
   background-color: #5fcf80;
   color: #fff;
+}
+
+.traffic-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 @keyframes hideshow {
@@ -121,7 +128,7 @@ svg:hover circle {
   margin: auto;
 }
 
-@media (min-width: 768px) {
+@media (768px) {
   .grid-container {
     grid-template-columns: repeat(3, auto);
     grid-template-areas: "header header", "nav main";
