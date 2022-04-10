@@ -26,10 +26,10 @@ function lineChart(data) {
   let json = JSON.parse(dataset);
   console.log(json);
 
-  const newChart = documet.getElementById("myChart");
-
   // DYNAMIC LINE CHART
   // 1) grab element that handles the chart
+  const newChart = documet.getElementById("myChart");
+
   // 2) use chart class
   // 3) use data within chart class
   // 4) inject timerange (elements) to lables because labels are each element of the timerange
