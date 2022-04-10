@@ -20,7 +20,7 @@ alertBanner.addEventListener("click", (e) => {
   }
 });
 
-// CHANGE CHART FUNCTIONS
+// CHANGE JSON FROM STRINGIFY TO INT
 function lineChart(data) {
   dataset = data;
   let json = JSON.parse(dataset);
@@ -28,17 +28,20 @@ function lineChart(data) {
 
   // DYNAMIC LINE CHART
   // 1) grab element that handles the chart
-  const newChart = documet.getElementById("myChart");
+  //   const newChart = documet.getElementById("myChart");
 
-  // 2) use chart class
-  // 3) use data within chart class
-  // 4) inject timerange (elements) to lables because labels are each element of the timerange
-  // 5) inject data to data within chart class
+  //   // 2) use chart class
+  //   // 3) use data within chart class
+  //   // 4) inject timerange (elements) to lables because labels are each element of the timerange
+  //   // 5) inject data to data within chart class
 }
+
+// CREATING CHARTJS OBJECTS TO SWITCH BASED ON H/D/W/M SELECTIONS
 
 function initData(type) {
   let datasetObject = {
     hourly: {
+      // BOTTOM LABELS
       timeRange: [
         "1",
         "2",
@@ -53,7 +56,9 @@ function initData(type) {
         "11",
         "12",
       ],
+      // LEFT SIDE LABELS
       valueRange: [500, 1000, 1500, 2000, 2500],
+      // CREATES AN ARRAY WITH 12 VALUES OF RANDOM NUMBERS
       data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((element) => {
         return (element = Math.floor(Math.random() * 2500));
       }),
@@ -96,6 +101,7 @@ function initData(type) {
       }),
     },
   };
+  // TAKES THE OBJECTS AND STRINGIFY INTO JSON
   return JSON.stringify(datasetObject[type]);
 }
 
