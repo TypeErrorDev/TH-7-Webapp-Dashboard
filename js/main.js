@@ -1,3 +1,8 @@
+let ul = document.querySelector(".traffic-nav");
+let li = ul.querySelectorAll("li");
+let activeLi = ul.querySelector(".active");
+let targetLi = ul.querySelector(".active")[0];
+
 // GET ALERT BANNER
 const alertBanner = document.getElementById("alert");
 
@@ -15,7 +20,99 @@ alertBanner.addEventListener("click", (e) => {
   }
 });
 
-// CHARTJS FUNCTIONS
+// CHANGE CHART FUNCTIONS
+function lineChart(data) {
+  dataset = data;
+  let json = JSON.parse(dataset);
+  console.log(json);
+
+  const newChart = documet.getElementById("myChart");
+
+  // DYNAMIC LINE CHART
+  // 1) grab element that handles the chart
+  // 2) use chart class
+  // 3) use data within chart class
+  // 4) inject timerange (elements) to lables because labels are each element of the timerange
+  // 5) inject data to data within chart class
+}
+
+function initData(type) {
+  let datasetObject = {
+    hourly: {
+      timeRange: [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+      ],
+      valueRange: [500, 1000, 1500, 2000, 2500],
+      data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((element) => {
+        return (element = Math.floor(Math.random() * 2500));
+      }),
+    },
+    daily: {
+      timeRange: ["S", "M", "T", "W", "T", "F", "S"],
+      valueRange: [1000, 2000, 3000, 4000, 5000],
+      data: [1, 1, 1, 1, 1, 1, 1].map((element) => {
+        return (element = Math.floor(Math.random() * 5000));
+      }),
+    },
+    weekly: {
+      timeRange: ["1-7", "8-14", "15-21", "22-31"],
+      valueRange: [2000, 4000, 6000, 8000],
+      data: [1, 1, 1, 1].map((element) => {
+        return (element = Math.floor(Math.random() * 8000));
+      }),
+    },
+    monthly: {
+      timeRange: [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+      ],
+      valueRange: [
+        1500, 3000, 4500, 6000, 7500, 9000, 10500, 12000, 13500, 15000, 16500,
+        18000,
+      ],
+      data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((element) => {
+        return (element = Math.floor(Math.random() * 16500));
+      }),
+    },
+  };
+  return JSON.stringify(datasetObject[type]);
+}
+
+// declare a variable to remember the active element for later
+let activeListItem;
+// ADDEVENTLISTENER TO CHANGE TRAFFIC DISPLAY BUTTONS
+ul.addEventListener("click", (e) => {
+  if (e.target.classList[0] === "traffic-nav") return;
+  const currentTarget = e.target;
+  activeLi.classList.remove("active");
+  currentTarget.classList.add("active");
+  activeLi = currentTarget;
+  // CHANGE CHART FUNCTION
+  let testType = e.target.innerText.toLowerCase();
+  let data = initData(testType);
+  lineChart(data);
+});
 
 // LINE BAR
 const ctx = document.getElementById("myChart");

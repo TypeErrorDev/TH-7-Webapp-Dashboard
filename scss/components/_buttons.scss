@@ -22,20 +22,16 @@
   margin: 5px 0 0 0;
   padding: 3px;
   border: none;
-  background-color: $white;
-  &:first-child {
-    @include traffic-btn;
-    color: $white;
-  }
-  &:active {
-    @include traffic-btn;
-    color: $white;
-  }
+}
+
+.active {
+  @include traffic-btn;
+  color: $white;
 }
 
 // TRAFFIC NAV BUTTONS
 .traffic-nav {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
 }

@@ -50,15 +50,9 @@
   margin: 5px 0 0 0;
   padding: 3px;
   border: none;
-  background-color: #fff;
 }
-.traffic-nav li:first-child {
-  padding: 5px;
-  border-radius: 30px;
-  background-color: #5fcf80;
-  color: #fff;
-}
-.traffic-nav li:active {
+
+.active {
   padding: 5px;
   border-radius: 30px;
   background-color: #5fcf80;
@@ -68,7 +62,7 @@
 .traffic-nav {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 @keyframes hideshow {
@@ -251,6 +245,10 @@ svg:hover circle {
 }
 .alert-banner p {
   margin: auto;
+}
+
+.traffic-header h3 {
+  padding-left: 10px;
 }
 
 .line-chart,
