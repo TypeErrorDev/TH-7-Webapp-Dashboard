@@ -81,9 +81,9 @@ const dailyData = {
   datasets: [
     {
       label: "# of Hits",
-      valueRange: [1000, 2000, 3000, 4000, 5000],
+      valueRange: [0, 50, 100, 150, 200, 250],
       data: [1, 1, 1, 1, 1, 1, 1].map((element) => {
-        return (element = Math.floor(Math.random() * 5000));
+        return (element = Math.floor(Math.random() * 250));
       }),
       backgroundColor: "#7477BF",
       borderWidth: 1,
@@ -96,11 +96,10 @@ const dailyOptions = {
       beginAtZero: true,
     },
   },
-  options: {
-    plugins: {
-      legend: {
-        display: false,
-      },
+
+  plugins: {
+    legend: {
+      display: false,
     },
   },
 };
