@@ -144,23 +144,33 @@ let mobileChart = new Chart(mobileCanvas, {
   options: mobileOptions,
 });
 
-// CREATE THE CODE TO CHANGE THE CHART DATA BASED ON THE CLICKED BUTTON
+// LISTENS FOR WHICH BUTTON IS CLICKED AND UPDATES THE CHART
 ul.addEventListener("click", (e) => {
   if (e.target.classList[0] === "traffic-nav") return;
   const currentTarget = e.target;
   activeLi.classList.remove("active");
   currentTarget.classList.add("active");
-
   activeLi = currentTarget;
-  // CHANGE CHART FUNCTION
+  // IF STATMENT BASED ON WHICH BUTTON IS CLICKED
+
   let testType = e.target.innerText.toLowerCase();
   if (testType === "hourly") {
-    console.log("hourly");
+    updateChart();
   } else if (testType === "daily") {
-    console.log("daily");
+    updateChart();
   } else if (testType === "weekly") {
-    console.log("weekly");
+    updateChart();
   } else if (testType === "monthly") {
-    console.log("monthly");
+    updateChart();
   }
 });
+
+// UPDATE THE CHART DATA
+function updateChart() {
+  trafficChart.data.datasets[0].data = [
+    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+  ].map((element) => {
+    return (element = Math.floor(Math.random() * 2500));
+  });
+  trafficChart.update();
+}
