@@ -28,22 +28,9 @@ ul.addEventListener("click", (e) => {
   currentTarget.classList.add("active");
 
   activeLi = currentTarget;
-  // CHANGE CHART FUNCTION
+  // CHANGE CHART (FUNCTION)
   let testType = e.target.innerText.toLowerCase();
 });
-
-// CREATE THE CODE TO CHANGE THE CHART DATA BASED ON THE CLICKED BUTTON
-// ul.addEventListener("click", (e) => {
-//   if (e.target.classList.contains("hourly")) {
-
-//   }
-//   if (e.target.classList.contains("daily")) {
-//   }
-//   if (e.target.classList.contains("weekly")) {
-//   }
-//   if (e.target.classList.contains("monthly")) {
-//   }
-// });
 
 //Line Chart Graph
 const trafficCanvas = document.getElementById("myChart");
@@ -115,6 +102,7 @@ const dailyOptions = {
     },
   },
 };
+
 let dailyChart = new Chart(dailyCanvas, {
   type: "bar",
   data: dailyData,
@@ -154,4 +142,25 @@ let mobileChart = new Chart(mobileCanvas, {
   type: "doughnut",
   data: mobileData,
   options: mobileOptions,
+});
+
+// CREATE THE CODE TO CHANGE THE CHART DATA BASED ON THE CLICKED BUTTON
+ul.addEventListener("click", (e) => {
+  if (e.target.classList[0] === "traffic-nav") return;
+  const currentTarget = e.target;
+  activeLi.classList.remove("active");
+  currentTarget.classList.add("active");
+
+  activeLi = currentTarget;
+  // CHANGE CHART FUNCTION
+  let testType = e.target.innerText.toLowerCase();
+  if (testType === "hourly") {
+    console.log("hourly");
+  } else if (testType === "daily") {
+    console.log("daily");
+  } else if (testType === "weekly") {
+    console.log("weekly");
+  } else if (testType === "monthly") {
+    console.log("monthly");
+  }
 });

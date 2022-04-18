@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="images/icons8-dashboard-16.png"
+      type="image/x-icon"
+    />
     <title>WebApp</title>
   </head>
   <body class="grid-container">
@@ -114,10 +119,10 @@
         <div class="traffic-header">
           <h3>Traffic</h3>
           <ul class="traffic-nav">
-            <li class="traffic-nav-link active">Hourly</li>
-            <li class="traffic-nav-link">Daily</li>
-            <li class="traffic-nav-link">Weekly</li>
-            <li class="traffic-nav-link">Monthly</li>
+            <li class="traffic-nav-link active" id="hourly">Hourly</li>
+            <li class="traffic-nav-link" id="daily">Daily</li>
+            <li class="traffic-nav-link" id="weekly">Weekly</li>
+            <li class="traffic-nav-link" id="monthly">Monthly</li>
           </ul>
         </div>
         <div class="widget-container-full">
@@ -127,7 +132,7 @@
       </section>
       <div class="line-break"></div>
       <!-- DAILY TRAFFIC COLUMN CHART -->
-      <section class="daily">
+      <section class="daily" id="daily">
         <h3>Daily Traffic</h3>
         <div class="widget-container-half">
           <canvas id="daily-chart" width="200" height="100"></canvas>
@@ -135,7 +140,7 @@
       </section>
 
       <!-- MOBILE USER DONUT CHART -->
-      <section class="daily">
+      <section class="daily" id="mobile">
         <h3>Mobile Users</h3>
         <div class="widget-container-half">
           <canvas id="mobile-chart" width="200" height="100"></canvas>
