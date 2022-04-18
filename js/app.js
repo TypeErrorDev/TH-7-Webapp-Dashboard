@@ -30,9 +30,21 @@ ul.addEventListener("click", (e) => {
   activeLi = currentTarget;
   // CHANGE CHART FUNCTION
   let testType = e.target.innerText.toLowerCase();
-  // let data = initData(testType);
-  // lineChart(data);
 });
+
+// CREATE THE CODE TO CHANGE THE CHART DATA BASED ON THE CLICKED BUTTON
+// ul.addEventListener("click", (e) => {
+//   if (e.target.classList.contains("hourly")) {
+
+//   }
+//   if (e.target.classList.contains("daily")) {
+//   }
+//   if (e.target.classList.contains("weekly")) {
+//   }
+//   if (e.target.classList.contains("monthly")) {
+//   }
+// });
+
 //Line Chart Graph
 const trafficCanvas = document.getElementById("myChart");
 let trafficData = {
