@@ -51,9 +51,10 @@
 }
 
 @mixin hover {
-  &:hover {
+  & img:hover {
     filter: grayscale(98%);
     background-color: #aaaaaa8c;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    outline: 1px solid black;
   }
 }

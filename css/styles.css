@@ -27,6 +27,10 @@
   grid-area: "main";
 }
 
+a {
+  cursor: pointer;
+}
+
 .chart-btn {
   display: flex;
   flex-direction: column;
@@ -64,7 +68,42 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 10px;
+  margin: 0 10px 10px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  height: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
 }
 
 .form-field {
@@ -78,12 +117,14 @@
   border-radius: 10px;
   padding: 20px;
   margin: auto;
-  color: #c3c3c3;
+  color: #7477bf;
+  font-weight: bolder;
 }
-.form-field:hover {
+.form-field img:hover {
   filter: grayscale(98%);
   background-color: rgba(170, 170, 170, 0.5490196078);
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  outline: 1px solid black;
 }
 
 .message-area {
@@ -97,13 +138,14 @@
   border-radius: 10px;
   padding: 20px;
   margin: 20px 16px;
-  color: #c3c3c3;
+  color: #7477bf;
   resize: none;
 }
-.message-area:hover {
+.message-area img:hover {
   filter: grayscale(98%);
   background-color: rgba(170, 170, 170, 0.5490196078);
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  outline: 1px solid black;
 }
 
 .button-primary {
@@ -128,12 +170,41 @@
   justify-content: center;
   width: 90%;
   height: 50px;
-  background-color: #7477bf;
+  background-color: #c3c3c3;
   border-radius: 10px;
   padding: 20px;
   margin: 20px 16px;
-  color: #fff;
+  color: black;
   font-size: 16px;
+}
+
+.email-toggle,
+.profile-toggle {
+  width: 98%;
+}
+
+.switch-ios.switch-light {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex;
+  margin: 12px;
+}
+
+.switch1 {
+  margin-left: 40px;
+}
+
+.switch2 {
+  margin-left: 70px;
+}
+
+.tz-field {
+  width: 90%;
+  height: 50px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  margin: 20px 16px;
+  color: #7477bf;
 }
 
 @keyframes hideshow {
@@ -262,7 +333,7 @@ svg:hover circle {
   width: 1px;
   height: 35px;
   background-color: #939393;
-  margin-left: 10px;
+  margin-left: 30px;
 }
 
 .top-container,
@@ -324,16 +395,12 @@ svg:hover circle {
   flex-direction: row;
   justify-content: space-between;
   width: auto;
-  height: 25px;
+  height: 35px;
   border-radius: 5px;
   margin: 10px 30px 20px 25px;
 }
 .alert-banner p {
   margin: auto;
-}
-
-.traffic-header h3 {
-  margin-left: 10px;
 }
 
 .line-break {
@@ -351,7 +418,7 @@ svg:hover circle {
 }
 
 h3 {
-  margin: 0 0 25px 16px;
+  margin: 0 0 10px 16px;
 }
 
 .fb-container,
@@ -369,12 +436,13 @@ h3 {
   fill: #7477bf;
   background-color: rgba(195, 195, 195, 0.6549019608);
 }
-.fb-container:hover,
-.ig-container:hover,
-.twitter-container:hover {
+.fb-container img:hover,
+.ig-container img:hover,
+.twitter-container img:hover {
   filter: grayscale(98%);
   background-color: rgba(170, 170, 170, 0.5490196078);
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  outline: 1px solid black;
 }
 
 .members-container {
@@ -392,10 +460,11 @@ h3 {
   text-align: center;
   width: 100%;
 }
-.members:hover {
+.members img:hover {
   filter: grayscale(98%);
   background-color: rgba(170, 170, 170, 0.5490196078);
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  outline: 1px solid black;
 }
 
 .members-text {
@@ -406,10 +475,11 @@ h3 {
   text-align: center;
   padding: 15px;
 }
-.recent-section:hover {
+.recent-section img:hover {
   filter: grayscale(98%);
   background-color: rgba(170, 170, 170, 0.5490196078);
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  outline: 1px solid black;
 }
 
 .invisible {

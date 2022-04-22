@@ -11,7 +11,8 @@
   border-radius: 10px;
   padding: 20px;
   margin: auto;
-  color: $light-gray;
+  color: $light-purple;
+  font-weight: bolder;
   @include hover;
 }
 
@@ -26,7 +27,7 @@
   border-radius: 10px;
   padding: 20px;
   margin: 20px 16px;
-  color: $light-gray;
+  color: $light-purple;
   resize: none;
   @include hover;
 }
@@ -53,10 +54,36 @@
   justify-content: center;
   width: 90%;
   height: 50px;
-  background-color: $light-purple;
+  background-color: $light-gray;
   border-radius: 10px;
   padding: 20px;
   margin: 20px 16px;
-  color: $white;
+  color: black;
   font-size: 16px;
+}
+
+.email-toggle,
+.profile-toggle {
+  width: 98%;
+}
+.switch-ios.switch-light {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex;
+  margin: 12px;
+}
+.switch1 {
+  margin-left: 40px;
+}
+.switch2 {
+  margin-left: 70px;
+}
+
+.tz-field {
+  width: 90%;
+  height: 50px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  margin: 20px 16px;
+  color: $light-purple;
 }
