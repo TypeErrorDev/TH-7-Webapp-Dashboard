@@ -51,18 +51,23 @@
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 160px;
-  height: 50px;
+  min-width: 200px;
+  height: 115px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+  border-radius: 5px;
+  outline: 1px solid black;
+  box-shadow: 1px 1px 10px $light-purple;
+  color: $light-purple;
+  /* PARAGRAPH INSIDE THE DROPDOWN*/
+  & p {
+    font-size: $para-font-size;
+    padding: 0 0 2px 2px;
+  }
+  /* IMAGES INSIDE THE DROPDOWN BOX*/
+  & img {
+    margin: 4px;
+  }
 }
 
 /* Change color of dropdown links on hover */

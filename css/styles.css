@@ -82,18 +82,23 @@ a {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 160px;
-  height: 50px;
+  min-width: 200px;
+  height: 115px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  border-radius: 5px;
+  outline: 1px solid black;
+  box-shadow: 1px 1px 10px #7477bf;
+  color: #7477bf;
+  /* PARAGRAPH INSIDE THE DROPDOWN*/
+  /* IMAGES INSIDE THE DROPDOWN BOX*/
 }
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.dropdown-content p {
+  font-size: 0.75rem;
+  padding: 0 0 2px 2px;
+}
+.dropdown-content img {
+  margin: 4px;
 }
 
 /* Change color of dropdown links on hover */
@@ -242,6 +247,13 @@ a {
   margin-left: 25px;
 }
 
+.notif-picture1,
+.notif-picture2 {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
 svg:hover[class=bell-icon] {
   animation: 0.2s infinite ease-in-out bell-wiggle;
   animation-iteration-count: infinite;
@@ -334,6 +346,12 @@ svg:hover circle {
   height: 35px;
   background-color: #939393;
   margin-left: 30px;
+}
+
+.notif-line-break {
+  width: 98%;
+  height: 1px;
+  background-color: rgba(169, 169, 169, 0.614);
 }
 
 .top-container,

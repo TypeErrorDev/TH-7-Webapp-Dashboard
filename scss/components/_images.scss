@@ -13,6 +13,14 @@
   margin-left: 25px;
 }
 
+// *******NOTIFICATION PROMPT*******
+.notif-picture1,
+.notif-picture2 {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
 svg:hover[class="bell-icon"] {
   animation: 0.2s infinite ease-in-out bell-wiggle;
   animation-iteration-count: infinite;
