@@ -195,3 +195,80 @@ function updateChart() {
   });
   trafficChart.update();
 }
+
+// MESSAGE USER SEARCH FUNCTIONS
+function handleSearch(e) {
+  e.preventDefault();
+  let searchValue = document.getElementById("search-input").value;
+}
+
+// function handleSearch(event) {
+//   const currentValue = event.target.value.toLowerCase();
+//   const imageAnchors = document.querySelectorAll("img.profile-image");
+
+//   for (const image of imageAnchors) {
+//     if (image.dataset.caption.includes(currentValue)) {
+//       image.classList.remove("hidden");
+//     } else {
+//       image.classList.add("hidden");
+//     }
+//   }
+// }
+// const searchElement = document.getElementById("userField");
+// searchElement.addEventListener("keyup", handleSearch);
+
+// //  MESSAGE USERS FUNCTIONS
+// const user = document.getElementById("userField");
+// const message = document.getElementById("messageField");
+// const send = document.getElementById("send");
+
+// send.addEventListener("click", () => {
+//   if (user.value === "" && message.value === "") {
+//     alert("Please fill out user and message fields before sending");
+//   } else if (user.value === "") {
+//     alert("Please fill out user field before sending");
+//   } else if (message.value === "") {
+//     alert("Please fill out message field before sending");
+//   } else {
+//     alert(`Message successfully sent to: ${user.value}`);
+//   }
+// });
+
+// // SETTINGS SAVING TO LOCAL STORAGE
+// const email = document.querySelector("#email");
+// const public = document.querySelector("#public");
+// const timezone = document.querySelector(".time-field");
+// const save = document.querySelector(".btn-save");
+// const cancel = document.querySelector(".btn-cancel");
+// function save.addEventListener("click", () {
+//   localStorage.setItem("email", email.checked);
+//   localStorage.setItem("public", public.checked);
+//   localStorage.setItem("timezone", timezone.value);
+// });
+
+// cancel.addEventListener("click", () => {
+//   localStorage.removeItem("email");
+//   localStorage.removeItem("public");
+//   localStorage.removeItem("timezone");
+//   email.checked = null;
+//   public.checked = null;
+//   timezone.value = "Select a Timezone";
+// });
+
+// function Storage() {
+//   if (localStorage.email === "true") {
+//     email.checked = true;
+//   } else {
+//     email.checked = false;
+//   }
+//   if (localStorage.public === "true") {
+//     public.checked = true;
+//   } else {
+//     public.checked = false;
+//   }
+//   if (localStorage.timezone) {
+//     timezone.value = localStorage.timezone;
+//   }
+// }
+
+// Storage();
