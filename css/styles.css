@@ -275,6 +275,9 @@ svg:hover circle {
   align-items: center;
   margin: auto;
 }
+.nav-svg-icons:active {
+  fill: #fff;
+}
 
 .social-svg {
   margin: 10px;
@@ -288,6 +291,13 @@ svg:hover circle {
 
 .members img {
   margin-top: 20px;
+}
+
+.home-icon,
+.bar-chart,
+.members-icon,
+.settings-icon {
+  fill: #fff;
 }
 
 @media (min-width: 768px) {

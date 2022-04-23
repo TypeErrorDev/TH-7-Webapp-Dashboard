@@ -197,10 +197,7 @@ function updateChart() {
 }
 
 // MESSAGE USER SEARCH FUNCTIONS
-function handleSearch(e) {
-  e.preventDefault();
-  let searchValue = document.getElementById("search-input").value;
-}
+let searchValue = document.getElementById("userField").value;
 
 // function handleSearch(event) {
 //   const currentValue = event.target.value.toLowerCase();

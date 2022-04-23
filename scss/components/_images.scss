@@ -38,6 +38,9 @@ svg:hover circle {
   fill: $white;
   align-items: center;
   margin: auto;
+  &:active {
+    fill: $white;
+  }
 }
 
 .social-svg {
@@ -51,4 +54,10 @@ svg:hover circle {
 
 .members img {
   margin-top: 20px;
+}
+.home-icon,
+.bar-chart,
+.members-icon,
+.settings-icon {
+  fill: $white;
 }
