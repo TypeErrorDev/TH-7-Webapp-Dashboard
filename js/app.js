@@ -197,7 +197,9 @@ function updateChart() {
 }
 
 // MESSAGE USER SEARCH FUNCTIONS
-let searchValue = document.getElementById("userField").value;
+function searchUser() {
+  let searchValue = document.getElementById("userField").value;
+}
 
 // function handleSearch(event) {
 //   const currentValue = event.target.value.toLowerCase();
