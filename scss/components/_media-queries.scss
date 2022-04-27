@@ -1,6 +1,6 @@
 @use "../utilities" as *;
 
-@media (min-width: $tablet) {
+@media screen and (min-width: $tablet) {
   .grid-container {
     grid-template-columns: repeat(3, auto);
     grid-template-areas: "header header", "nav main";

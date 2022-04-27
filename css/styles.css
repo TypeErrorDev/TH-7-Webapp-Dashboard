@@ -153,7 +153,7 @@ a {
   outline: 1px solid black;
 }
 
-.button-primary {
+.btn-save {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -168,7 +168,7 @@ a {
   font-size: 16px;
 }
 
-.button-disabled {
+.btn-cancel {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -203,7 +203,7 @@ a {
   margin-left: 70px;
 }
 
-.tz-field {
+.time-field {
   width: 90%;
   height: 50px;
   background-color: #f5f5f5;
@@ -300,7 +300,7 @@ svg:hover circle {
   fill: #fff;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .grid-container {
     grid-template-columns: repeat(3, auto);
     grid-template-areas: "header header", "nav main";
@@ -519,12 +519,11 @@ h3 {
   display: none;
 }
 
-.line-chart,
-.column-chart,
-.donut-chart {
+#myChart,
+#daily-chart,
+#mobile-chart {
   width: 320px;
   height: 150px;
-  outline: 1px solid red;
 }
 
 /* ============================================= */
