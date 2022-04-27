@@ -197,6 +197,13 @@ function updateChart() {
 }
 
 // MESSAGE USER SEARCH FUNCTIONS
+/*
+grab the input field
+grab the innerHTML of the input field
+use the innerHTML to search user name
+if the user name is found, display the users name in a drop down
+click the user name in dropdown to autocomplet the input field
+*/
 function searchUser() {
   let searchValue = document.getElementById("userField").value;
 }
@@ -228,9 +235,14 @@ const timezone = document.querySelector(".time-field");
 const buttonSave = document.querySelector(".btn-save");
 const cancel = document.querySelector(".btn-cancel");
 
-buttonSave.addEventListener("click", () => {
+buttonSave.addEventListener("click", (e) => {
   localStorage.setItem("email", email.checked);
   localStorage.setItem("public", public.checked);
   localStorage.setItem("timezone", timezone.value);
   console.log("saved to localStorage");
+});
+
+cancel.addEventListener("click", () => {
+  localStorage.clear();
+  console.log("cleared localStorage");
 });

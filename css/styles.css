@@ -121,11 +121,17 @@ a {
   background-color: #f5f5f5;
   border-radius: 10px;
   padding: 20px;
-  margin: auto;
+  margin: 10px auto;
   color: #7477bf;
   font-weight: bolder;
 }
 .form-field img:hover {
+  filter: grayscale(98%);
+  background-color: rgba(170, 170, 170, 0.5490196078);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  outline: 1px solid black;
+}
+.form-field:hover {
   filter: grayscale(98%);
   background-color: rgba(170, 170, 170, 0.5490196078);
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
@@ -142,7 +148,7 @@ a {
   background-color: #f5f5f5;
   border-radius: 10px;
   padding: 20px;
-  margin: 20px 16px;
+  margin: 20px auto;
   color: #7477bf;
   resize: none;
 }
@@ -152,7 +158,14 @@ a {
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
   outline: 1px solid black;
 }
+.message-area:hover {
+  filter: grayscale(98%);
+  background-color: rgba(170, 170, 170, 0.5490196078);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  outline: 1px solid black;
+}
 
+.btn-send,
 .btn-save {
   display: flex;
   flex-direction: column;
@@ -163,7 +176,7 @@ a {
   background-color: #7477bf;
   border-radius: 10px;
   padding: 20px;
-  margin: 20px 16px;
+  margin: 20px auto;
   color: #fff;
   font-size: 16px;
 }
@@ -281,12 +294,12 @@ svg:hover circle {
 
 .social-svg {
   margin: 10px;
-  width: 80px;
-  height: 80px;
+  width: 60px;
 }
 
 .profile-image {
   border-radius: 50%;
+  width: 75px;
 }
 
 .members img {
@@ -339,10 +352,65 @@ svg:hover circle {
     flex-direction: column;
     max-width: 50px;
     height: auto;
+    margin-top: 10px;
   }
 
   svg[id^="#"] {
     margin-top: 20px;
+  }
+
+  .social-header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .daily-mobile-chart {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+  }
+
+  .split-chart-lb {
+    width: 1px;
+    height: 300px;
+    background-color: rgba(137, 137, 140, 0.4823529412);
+    margin-bottom: -25px;
+  }
+
+  .line-break1 {
+    margin-top: 0;
+  }
+
+  .members {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .switch-light.switch-ios {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .settings-toggle,
+h3 {
+    margin: 10px;
+  }
+
+  .time-field {
+    width: 95%;
+  }
+
+  .btn-save,
+.btn-cancel {
+    width: 45%;
+    margin: auto;
+  }
+
+  .settings-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 .top-container {
@@ -428,14 +496,35 @@ svg:hover circle {
   margin: 10px 30px 20px 25px;
 }
 .alert-banner p {
-  margin: auto;
+  margin: 10px;
 }
 
-.line-break {
+.traffic {
+  margin-bottom: 10px;
+}
+
+.line-break1,
+.line-break2,
+.line-break3,
+.line-break4 {
   width: 100%;
   height: 1px;
   background-color: rgba(137, 137, 140, 0.4823529412);
   margin: 30px 0;
+}
+
+.btm-traffic-line-break {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(137, 137, 140, 0.4823529412);
+}
+
+.daily-mobile-lb,
+.split-chart-lb {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(137, 137, 140, 0.4823529412);
+  margin: 10px 0 10px 0;
 }
 
 .tq-line-break {
@@ -445,8 +534,19 @@ svg:hover circle {
   margin: auto;
 }
 
+.line-break {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(137, 137, 140, 0.4823529412);
+  margin: 10px 0 10px 0;
+}
+
 h3 {
-  margin: 0 0 10px 16px;
+  margin: 0 0 10px 10px;
+}
+
+.h3-daily {
+  margin-top: 10px;
 }
 
 .fb-container,
@@ -472,6 +572,14 @@ h3 {
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
   outline: 1px solid black;
 }
+.fb-container:hover,
+.ig-container:hover,
+.twitter-container:hover {
+  filter: grayscale(98%);
+  background-color: rgba(170, 170, 170, 0.5490196078);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  outline: 1px solid black;
+}
 
 .members-container {
   display: flex;
@@ -482,13 +590,19 @@ h3 {
 
 .members {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 100%;
+  width: 98%;
 }
 .members img:hover {
+  filter: grayscale(98%);
+  background-color: rgba(170, 170, 170, 0.5490196078);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  outline: 1px solid black;
+}
+.members:hover {
   filter: grayscale(98%);
   background-color: rgba(170, 170, 170, 0.5490196078);
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
@@ -502,8 +616,16 @@ h3 {
 .recent-section {
   text-align: center;
   padding: 15px;
+  width: 98%;
+  margin: 0 auto;
 }
 .recent-section img:hover {
+  filter: grayscale(98%);
+  background-color: rgba(170, 170, 170, 0.5490196078);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  outline: 1px solid black;
+}
+.recent-section:hover {
   filter: grayscale(98%);
   background-color: rgba(170, 170, 170, 0.5490196078);
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);

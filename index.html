@@ -175,27 +175,29 @@
           <canvas id="myChart" width="200" height="100"></canvas>
         </div>
       </section>
-      <div class="line-break"></div>
+      <div class="btm-traffic-line-break"></div>
       <!-- DAILY TRAFFIC COLUMN CHART -->
-      <section class="daily" id="daily">
-        <h3 id="h3-daily">Daily Traffic</h3>
-        <div class="widget-container-half">
-          <canvas id="daily-chart" width="200" height="100"></canvas>
-        </div>
-      </section>
-      <div class="line-break"></div>
-      <!-- MOBILE USER DONUT CHART -->
-      <section class="daily" id="mobile">
-        <h3 id="h3-mobile">Mobile Users</h3>
-        <div class="widget-container-half">
-          <canvas id="mobile-chart" width="200" height="100"></canvas>
-        </div>
-      </section>
-      <div class="line-break"></div>
+      <div class="daily-mobile-chart">
+        <section class="daily" id="daily">
+          <h3 id="h3-daily">Daily Traffic</h3>
+          <div class="widget-container-half">
+            <canvas id="daily-chart" width="200" height="100"></canvas>
+          </div>
+        </section>
+        <div class="split-chart-lb"></div>
+        <!-- MOBILE USER DONUT CHART -->
+        <section class="daily" id="mobile">
+          <h3 id="h3-mobile">Mobile Users</h3>
+          <div class="widget-container-half">
+            <canvas id="mobile-chart" width="200" height="100"></canvas>
+          </div>
+        </section>
+      </div>
+      <div class="line-break1"></div>
       <!-- SOCIAL STATUS -->
       <div class="social-container">
+        <h3 id="h3-social">Social Status</h3>
         <div class="social-header">
-          <h3 id="h3-social">Social Status</h3>
           <div class="fb-container">
             <div class="fb-img">
               <svg
@@ -249,7 +251,7 @@
           </div>
         </div>
       </div>
-      <div class="line-break"></div>
+      <div class="line-break2"></div>
       <!-- NEW MEMBER SECTION -->
       <div class="h3-members">
         <h3 id="h3-newMembers">New Members</h3>
@@ -304,10 +306,8 @@
             <p>09/15/2022</p>
           </div>
         </section>
-
-        <div class="line-break"></div>
       </div>
-
+      <div class="line-break"></div>
       <!-- RECENT ACTIVITY -->
       <div class="h3-members">
         <h3 id="h3-recentActivity">Recent Activity</h3>
@@ -367,7 +367,7 @@
           </div>
         </div>
 
-        <div class="line-break"></div>
+        <div class="line-break3"></div>
       </div>
       <!-- MESSAGE FORM -->
       <section class="message">
@@ -386,40 +386,41 @@
             rows="10"
             class="message-area"
           ></textarea>
-          <button type="submit" class="btn-save" id="send">Send</button>
+          <button type="submit" class="btn-send" id="send">Send</button>
         </form>
       </section>
 
+      <div class="line-break4"></div>
       <!-- SETTINGS SECTION -->
       <section class="settings">
-        <h3 id="h3-settings">Settings</h3>
+        <div class="settings-toggle">
+          <h3 id="h3-settings">Settings</h3>
+          <!-- CSS TOGGLE -->
+          <div class="email-toggle">
+            <label class="switch-light switch-ios" onclick="">
+              <input type="checkbox" id="email" />
+              <strong class="email">Send Email Notifications</strong>
+              <span class="switch1">
+                <span>OFF</span>
+                <span>ON</span>
+                <a></a>
+              </span>
+            </label>
+          </div>
 
-        <!-- CSS TOGGLE -->
-        <div class="email-toggle">
-          <label class="switch-light switch-ios" onclick="">
-            <input type="checkbox" id="email" />
-            <strong class="email">Send Email Notifications</strong>
-            <span class="switch1">
-              <span>OFF</span>
-              <span>ON</span>
-              <a></a>
-            </span>
-          </label>
+          <!-- CSS TOGGLE -->
+          <div class="profile-toggle">
+            <label class="switch-light switch-ios" onclick="">
+              <input type="checkbox" id="public" />
+              <strong class="profile">Set Profile to Public</strong>
+              <span class="switch2">
+                <span>OFF</span>
+                <span>ON</span>
+                <a></a>
+              </span>
+            </label>
+          </div>
         </div>
-
-        <!-- CSS TOGGLE -->
-        <div class="profile-toggle">
-          <label class="switch-light switch-ios" onclick="">
-            <input type="checkbox" id="public" />
-            <strong class="profile">Set Profile to Public</strong>
-            <span class="switch2">
-              <span>OFF</span>
-              <span>ON</span>
-              <a></a>
-            </span>
-          </label>
-        </div>
-
         <select name="" id="timezone" class="time-field">
           <option disabled selected>Select a Timezone</option>
           <option id="pst">Pacific Standard Time</option>
@@ -427,7 +428,7 @@
           <option id="est">Eastern Standard Time</option>
         </select>
         <div class="settings-button">
-          <button class="btn-save" id="save">Save</button>
+          <button type="button" class="btn-save" id="save">Save</button>
           <button class="btn-cancel" id="cancel">Cancel</button>
         </div>
       </section>

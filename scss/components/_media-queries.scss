@@ -29,13 +29,72 @@
     grid-row-start: 2;
     grid-row-end: 5;
   }
+  // SVG ICONS
   .nav-svg-icons {
     display: flex;
     flex-direction: column;
     max-width: 50px;
     height: auto;
+    margin-top: 10px;
   }
   svg[id^="#"] {
     margin-top: 20px;
+  }
+
+  // SOCIAL STATS HEADER
+  .social-header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  // DAILY AND MOBILE CHART STYLES
+
+  .daily-mobile-chart {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+  }
+  .split-chart-lb {
+    width: 1px;
+    height: 300px;
+    background-color: $line-break;
+    margin-bottom: -25px;
+  }
+  .line-break1 {
+    margin-top: 0;
+  }
+
+  // MEMBERS AND RECENT POSTS
+  .members {
+    display: flex;
+    flex-direction: row;
+  }
+
+  // MESSAGE SEND BUTTON
+
+  // TOGGLE BUTTONS
+  .switch-light.switch-ios {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  // SETTINGS TIMEZONE, SAVE AND CANCEL BUTTONS
+  .settings-toggle,
+  h3 {
+    margin: 10px;
+  }
+  .time-field {
+    width: 95%;
+  }
+  .btn-save,
+  .btn-cancel {
+    width: 45%;
+    margin: auto;
+  }
+  .settings-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }

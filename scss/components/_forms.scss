@@ -10,7 +10,7 @@
   background-color: #f5f5f5;
   border-radius: 10px;
   padding: 20px;
-  margin: auto;
+  margin: 10px auto;
   color: $light-purple;
   font-weight: bolder;
   @include hover;
@@ -26,12 +26,13 @@
   background-color: #f5f5f5;
   border-radius: 10px;
   padding: 20px;
-  margin: 20px 16px;
+  margin: 20px auto;
   color: $light-purple;
   resize: none;
   @include hover;
 }
 
+.btn-send,
 .btn-save {
   display: flex;
   flex-direction: column;
@@ -42,7 +43,7 @@
   background-color: $light-purple;
   border-radius: 10px;
   padding: 20px;
-  margin: 20px 16px;
+  margin: 20px auto;
   color: $white;
   font-size: 16px;
 }
