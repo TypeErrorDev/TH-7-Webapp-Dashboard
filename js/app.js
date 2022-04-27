@@ -228,8 +228,9 @@ const timezone = document.querySelector(".time-field");
 const buttonSave = document.querySelector(".btn-save");
 const cancel = document.querySelector(".btn-cancel");
 
-function buttonSave.addEventListener("click", () => {
+buttonSave.addEventListener("click", () => {
   localStorage.setItem("email", email.checked);
   localStorage.setItem("public", public.checked);
   localStorage.setItem("timezone", timezone.value);
+  console.log("saved to localStorage");
 });
