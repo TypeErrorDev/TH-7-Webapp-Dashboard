@@ -259,7 +259,11 @@
       <div class="members-container">
         <section class="members">
           <div class="members-section">
-            <img src="images/member-1.jpg" class="profile-image" />
+            <img
+              src="images/member-1.jpg"
+              alt="Victoria Chambers"
+              class="profile-image"
+            />
             <div class="members-text">
               <p>Victoria Chambers</p>
               <a href="#">victoria.chambers80@nomail.com</a>
@@ -272,7 +276,11 @@
 
         <section class="members">
           <div class="members-section">
-            <img src="images/member-2.jpg" class="profile-image" />
+            <img
+              src="images/member-2.jpg"
+              alt="Dale Byrd"
+              class="profile-image"
+            />
             <div class="members-text">
               <p>Dale Byrd</p>
               <a href="#">dale.byrd52@aol.com</a>
@@ -285,7 +293,11 @@
 
         <section class="members">
           <div class="members-section">
-            <img src="images/member-3.jpg" class="profile-image" />
+            <img
+              src="images/member-3.jpg"
+              alt="Dawn Wood"
+              class="profile-image"
+            />
             <div class="members-text">
               <p>Dawn Wood</p>
               <a href="#">dawn.wood16@msn.com</a>
@@ -298,7 +310,11 @@
 
         <section class="members">
           <div class="members-section">
-            <img src="images/member-4.jpg" alt="" class="profile-image" />
+            <img
+              src="images/member-4.jpg"
+              alt="Dan Oliver"
+              class="profile-image"
+            />
             <div class="members-text">
               <p>Dan Oliver</p>
               <a href="#">dan.oliver82@netscape.com</a>
@@ -315,7 +331,11 @@
       <div class="recent-container">
         <div class="recent-section">
           <div>
-            <img src="images/member-1.jpg" class="profile-image" />
+            <img
+              src="images/member-1.jpg"
+              alt="Victoria Chambers"
+              class="profile-image"
+            />
           </div>
           <div class="recent-text">
             <p>
@@ -329,7 +349,11 @@
 
         <div class="recent-section">
           <div>
-            <img src="images/member-2.jpg" class="profile-image" />
+            <img
+              src="images/member-2.jpg"
+              alt="Dale Byrd"
+              class="profile-image"
+            />
           </div>
           <div class="recent-text">
             <p>
@@ -344,7 +368,11 @@
 
         <div class="recent-section">
           <div>
-            <img src="images/member-3.jpg" class="profile-image" />
+            <img
+              src="images/member-3.jpg"
+              alt="Dawn Wood"
+              class="profile-image"
+            />
           </div>
           <div class="recent-text">
             <p>
@@ -359,7 +387,11 @@
 
         <div class="recent-section">
           <div>
-            <img src="images/member-4.jpg" class="profile-image" />
+            <img
+              src="images/member-4.jpg"
+              alt="Dan Oliver"
+              class="profile-image"
+            />
           </div>
           <div class="recent-text">
             <p>Dan Oliver posted <strong>WebApp's SEO Tips</strong></p>
@@ -373,12 +405,15 @@
       <section class="message">
         <h3 id="h3-message">Message User</h3>
         <form class="message-container" autocomplete="off">
-          <input
-            type="text"
-            placeholder="Search for user"
-            id="userField"
-            class="form-field"
-          />
+          <div class="autocomplete">
+            <input
+              type="text"
+              placeholder="Search for user"
+              id="userField"
+              list="members"
+              class="form-field"
+            />
+          </div>
           <textarea
             placeholder="Message the user"
             id="messageField"
@@ -434,8 +469,12 @@
       </section>
     </main>
     <!-- SCRIPTS -->
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
     <script src="js/app.js"></script>
+    <script>
+      autocomplete(document.getElementById("userField"), userNames);
+    </script>
   </body>
   <div class="invisible">:)</div>
 </html>
