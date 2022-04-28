@@ -1,6 +1,9 @@
 @use "../utilities" as *;
 
 @media screen and (min-width: $tablet) {
+  .recent-karot {
+    display: inline-block;
+  }
   .grid-container {
     grid-template-columns: repeat(3, auto);
     grid-template-areas: "header header", "nav main";
@@ -52,13 +55,17 @@
   .daily-mobile-chart {
     display: flex;
     flex-direction: row;
-    margin-top: 10px;
+    width: 100%;
+  }
+  .daily {
+    border-right: 1px solid $light-gray;
+    width: inherit;
   }
   .split-chart-lb {
-    width: 1px;
-    height: 300px;
-    background-color: $line-break;
-    margin-bottom: -25px;
+    display: none;
+  }
+  .widget-container-half {
+    padding-bottom: 20px;
   }
   .line-break1 {
     margin-top: 0;
@@ -95,6 +102,21 @@
     & a {
       align-self: flex-start;
     }
+  }
+  .recent-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 97%;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .recent-text {
+    width: 98%;
+    text-align: left;
+    margin-left: 10px;
   }
 
   // MESSAGE FORM AREA

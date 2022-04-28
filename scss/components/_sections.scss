@@ -151,13 +151,13 @@ h3 {
 .members-text {
   text-align: center;
 }
-
+.recent-karot {
+  display: none;
+}
 // RECENT ACTIVITY
 .recent-section {
   text-align: center;
-  padding: 15px;
-  width: 98%;
-  margin: 0 auto;
+  margin: 10px;
   @include hover;
 }
 
