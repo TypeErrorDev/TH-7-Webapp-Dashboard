@@ -65,11 +65,44 @@
   }
 
   // MEMBERS AND RECENT POSTS
-  .members {
+
+  .members-section {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+  }
+  .members img {
+    margin: 0;
   }
 
+  .tq-line-break {
+    margin-top: 15px;
+  }
+
+  .members-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 95px;
+    width: 100%;
+    margin-left: 10px;
+    & p {
+      align-self: flex-start;
+    }
+    & a {
+      align-self: flex-start;
+    }
+  }
+
+  // MESSAGE FORM AREA
+  .form-field,
+  .message-area,
+  .btn-send {
+    width: 670px;
+  }
   // MESSAGE SEND BUTTON
 
   // TOGGLE BUTTONS

@@ -381,9 +381,42 @@ svg:hover circle {
     margin-top: 0;
   }
 
-  .members {
+  .members-section {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+  }
+
+  .members img {
+    margin: 0;
+  }
+
+  .tq-line-break {
+    margin-top: 15px;
+  }
+
+  .members-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 95px;
+    width: 100%;
+    margin-left: 10px;
+  }
+  .members-text p {
+    align-self: flex-start;
+  }
+  .members-text a {
+    align-self: flex-start;
+  }
+
+  .form-field,
+.message-area,
+.btn-send {
+    width: 670px;
   }
 
   .switch-light.switch-ios {
