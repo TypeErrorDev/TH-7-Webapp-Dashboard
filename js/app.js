@@ -197,16 +197,10 @@ function updateChart() {
 }
 
 // MESSAGE USER SEARCH FUNCTIONS
-/*
-grab the input field
-grab the innerHTML of the input field
-use the innerHTML to search user name
-if the user name is found, display the users name in a drop down
-click the user name in dropdown to autocomplet the input field
-*/
+// DECLARE THE ARRAY OF USERS
 let userNames = ["Victoria Chambers", "Dale Byrd", "Dawn Wood", "Dan Oliver"];
 
-// FUNCTION TO AUTOCOMPLETE
+// FUNCTION FOR AUTOCOMPLETE
 function autocomplete(inp, arr) {
   /*the autocomplete function takes two arguments,
   the text field element and an array of possible autocompleted values:*/
