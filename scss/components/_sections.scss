@@ -161,10 +161,11 @@ h3 {
   @include hover;
 }
 
-.hidden {
-  display: none;
+.invisible {
+  text-align: center;
+  color: white;
 }
 
-.settings {
-  margin-bottom: 30px;
+.hidden {
+  display: none;
 }

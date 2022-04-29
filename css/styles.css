@@ -534,12 +534,13 @@ h3 {
   outline: 1px solid black;
 }
 
-.hidden {
-  display: none;
+.invisible {
+  text-align: center;
+  color: white;
 }
 
-.settings {
-  margin-bottom: 30px;
+.hidden {
+  display: none;
 }
 
 #myChart,
@@ -622,19 +623,6 @@ h3 {
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 5;
-  }
-
-  .top-container {
-    justify-content: end;
-    padding-right: 10px;
-  }
-
-  #logo {
-    margin-right: 400px;
-  }
-
-  .vl {
-    margin: 30px;
   }
 
   .nav-svg-icons {
@@ -759,15 +747,6 @@ h3 {
     justify-content: space-around;
   }
 }
-#logo {
-  margin-right: 700px;
-}
-
-.members-recent {
-  display: flex;
-  flex-direction: row;
-}
-
 /* ============================================= */
 /* Sub-Folder Imports */
 /* ============================================= */
