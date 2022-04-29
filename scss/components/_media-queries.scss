@@ -1,5 +1,6 @@
 @use "../utilities" as *;
 
+// *********** TABLET MEDIA QUERY *********** \\
 @media screen and (min-width: $tablet) {
   .recent-karot {
     display: inline-block;
@@ -31,6 +32,18 @@
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 5;
+  }
+
+  // TOP CONTAINER
+  .top-container {
+    justify-content: end;
+    padding-right: 10px;
+  }
+  #logo {
+    margin-right: 400px;
+  }
+  .vl {
+    margin: 30px;
   }
   // SVG ICONS
   .nav-svg-icons {
@@ -152,4 +165,14 @@
     flex-direction: row;
     justify-content: space-around;
   }
+}
+
+// *********** DESKTOP MEDIA QUERY*********** \\
+#logo {
+  margin-right: 700px;
+}
+.members-recent {
+  display: flex;
+  flex-direction: row;
+  // justify-content: space-between;
 }
