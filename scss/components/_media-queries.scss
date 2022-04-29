@@ -1,6 +1,6 @@
 @use "../utilities" as *;
 
-@media screen and (min-width: $tablet) {
+@media screen and (min-width: 768px) {
   .recent-karot {
     display: inline-block;
   }
@@ -31,6 +31,17 @@
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 5;
+  }
+
+  .top-container {
+    justify-content: end;
+    padding-right: 10px;
+  }
+  #logo {
+    margin-right: 400px;
+  }
+  .vl {
+    margin: 30px;
   }
   // SVG ICONS
   .nav-svg-icons {
@@ -151,5 +162,50 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+  }
+}
+
+// ***********DESKTOP MEDIA QUERY*********** \\
+@media screen and (min-width: $desktop) {
+  #logo {
+    margin-right: 700px;
+  }
+  .line-break2 {
+    margin: 0;
+  }
+  .daily {
+    margin: 0;
+  }
+  #h3-newMembers,
+  #h3-recentActivity {
+    text-align: left;
+  }
+  .members-container,
+  .recent-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-bottom: 1px solid $light-gray;
+    align-items: flex-start;
+    padding: 0 10px;
+  }
+  .members-container {
+    border-right: 1px solid $light-gray;
+  }
+  .members-recent {
+    display: flex;
+    flex-direction: row;
+  }
+  #h3-recent {
+    margin-bottom: 14px;
+  }
+  .line-break,
+  .line-break3 {
+    display: none;
+  }
+
+  .message-settings {
+    display: flex;
+    flex-direction: column;
   }
 }

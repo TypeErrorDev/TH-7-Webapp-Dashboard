@@ -22,13 +22,13 @@
   grid-template-areas: "header" "nav" "main";
 }
 .grid-header {
-  grid-area: "header";
+  grid-template-areas: "header";
 }
 .grid-nav {
-  grid-area: "nav";
+  grid-template-areas: "nav";
 }
 .grid-main {
-  grid-area: "main";
+  grid-template-areas: "main";
 }
 
 a {
