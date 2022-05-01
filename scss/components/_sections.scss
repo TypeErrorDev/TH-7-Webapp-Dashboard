@@ -144,6 +144,16 @@ h3 {
   @include hover;
 }
 
+.social-name {
+  color: $light-purple;
+}
+.social-number {
+  color: $light-purple;
+  font-size: 28px;
+  text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px,
+    #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+}
+
 .members-container {
   display: flex;
   flex-direction: column;

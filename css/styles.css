@@ -482,6 +482,16 @@ h3 {
   transform: scale(1.05);
 }
 
+.social-name {
+  color: #7477bf;
+}
+
+.social-number {
+  color: #7477bf;
+  font-size: 28px;
+  text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+}
+
 .members-container {
   display: flex;
   flex-direction: column;
