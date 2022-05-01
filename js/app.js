@@ -344,6 +344,14 @@ buttonSave.addEventListener("click", (e) => {
 
 // LISTEN FOR BUTTON CLICK AND CLEAR LOCAL STORAGE
 cancel.addEventListener("click", () => {
+  // IF THERE IS MORE THAN THESE ITEMS IN LOCAL STORAGE, USE THIS
+  // localStorage.removeItem("email");
+  // localStorage.removeItem("public");
+  // localStorage.removeItem("timezone");
+  email.checked = null;
+  public.checked = null;
+  timezone.value = "Select a Timezone";
+  // IF THIS IS THESE ARE THE ONLY ITEMS IN LOCAL STORAGE, USE THIS
   localStorage.clear();
   console.log("cleared localStorage");
 });

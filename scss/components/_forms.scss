@@ -13,7 +13,7 @@
   margin: 10px auto;
   color: $light-purple;
   font-weight: bolder;
-  @include hover;
+  @include input-shadow;
 }
 
 .message-area {
@@ -29,7 +29,7 @@
   margin: 20px auto;
   color: $light-purple;
   resize: none;
-  @include hover;
+  @include input-shadow;
 }
 
 .btn-send,

@@ -1,6 +1,12 @@
 @use "../utilities" as *;
 
 @media screen and (min-width: 768px) {
+  .widget-container-full {
+    width: 91vw;
+  }
+  .widget-container-half {
+    width: 44vw;
+  }
   .recent-karot {
     display: inline-block;
   }
@@ -38,7 +44,7 @@
     padding-right: 10px;
   }
   #logo {
-    margin-right: 400px;
+    margin-right: 29rem;
   }
   .vl {
     margin: 30px;
@@ -50,6 +56,12 @@
     max-width: 50px;
     height: auto;
     margin-top: 10px;
+  }
+  .home-icon,
+  .bar-chart,
+  .members-icon,
+  .settings-icon {
+    height: 50px;
   }
   svg[id^="#"] {
     margin-top: 20px;
@@ -83,7 +95,10 @@
   }
 
   // MEMBERS AND RECENT POSTS
-
+  #h3-newMembers,
+  #h3-recentActivity {
+    text-align: left;
+  }
   .members-section {
     display: flex;
     flex-direction: row;
@@ -91,6 +106,9 @@
     text-align: center;
     width: 100%;
     align-items: center;
+  }
+  .members {
+    padding-left: 10px;
   }
   .members img {
     margin: 0;
@@ -166,8 +184,17 @@
 }
 
 // ***********DESKTOP MEDIA QUERY*********** \\
-@media screen and (min-width: $desktop) {
+@media screen and (min-width: 1024px) {
   #logo {
+    margin-right: 45rem;
+  }
+  .widget-container-full {
+    width: 92vw;
+  }
+  .widget-container-half {
+    width: 45vw;
+  }
+  .widget #logo {
     margin-right: 700px;
   }
   .line-break2 {
@@ -180,6 +207,7 @@
   #h3-recentActivity {
     text-align: left;
   }
+
   .members-container,
   .recent-container {
     display: flex;
@@ -192,6 +220,7 @@
   .members-container {
     border-right: 1px solid $light-gray;
   }
+
   .members-recent {
     display: flex;
     flex-direction: row;
@@ -200,12 +229,31 @@
     margin-bottom: 14px;
   }
   .line-break,
-  .line-break3 {
+  .line-break3,
+  .line-break4 {
     display: none;
   }
-
   .message-settings {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+  }
+  .message {
+    padding: 0 10px;
+    border-right: 1px solid $light-gray;
+  }
+  .form-field,
+  .message-area,
+  .btn-send {
+    width: 453px;
+  }
+  .settings {
+    width: 472px;
+  }
+  .email-toggle {
+    margin-top: 50px;
+  }
+  .profile-toggle {
+    margin-top: 30px;
+    margin-bottom: 85px;
   }
 }

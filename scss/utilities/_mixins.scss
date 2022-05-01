@@ -22,8 +22,8 @@
 // TRAFFIC BUTTON
 @mixin traffic-btn {
   padding: 5px;
-  border-radius: 30px;
-  background-color: #5fcf80;
+  border-radius: 10px;
+  background-color: #51b6c8;
 }
 
 // WIDTHS FOR CONTAINERS BASED ON MEDIA QUERIES
@@ -51,16 +51,25 @@
 }
 
 @mixin hover {
-  & img:hover {
-    filter: grayscale(98%);
+  // & img:hover {
+  //   filter: grayscale(98%);
+  //   background-color: #aaaaaa8c;
+  //   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  //   outline: 1px solid black;
+  // }
+  &:hover {
+    filter: saturate(2);
     background-color: #aaaaaa8c;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
     outline: 1px solid black;
+    transform: scale(1.05);
   }
+}
+@mixin input-shadow {
   &:hover {
-    filter: grayscale(98%);
-    background-color: #aaaaaa8c;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    filter: saturate(2);
+    background-color: #d4d4d48c;
+    box-shadow: 2px 2px 5px black;
     outline: 1px solid black;
   }
 }
