@@ -339,7 +339,6 @@ buttonSave.addEventListener("click", (e) => {
   localStorage.setItem("email", email.checked);
   localStorage.setItem("public", public.checked);
   localStorage.setItem("timezone", timezone.value);
-  console.log("saved to localStorage");
 });
 
 // LISTEN FOR BUTTON CLICK AND CLEAR LOCAL STORAGE
@@ -353,5 +352,4 @@ cancel.addEventListener("click", () => {
   timezone.value = "Select a Timezone";
   // IF THIS IS THESE ARE THE ONLY ITEMS IN LOCAL STORAGE, USE THIS
   localStorage.clear();
-  console.log("cleared localStorage");
 });
