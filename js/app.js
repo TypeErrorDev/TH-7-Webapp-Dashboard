@@ -50,7 +50,7 @@ ul.addEventListener("click", (e) => {
 
   activeLi = currentTarget;
   // CHANGE CHART (FUNCTION)
-  let testType = e.target.innerText.toLowerCase();
+  // let testType = e.target.innerText.toLowerCase();
 });
 
 //Line Chart Graph

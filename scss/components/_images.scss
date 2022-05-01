@@ -26,7 +26,12 @@ svg:hover[class="bell-icon"] {
   animation-iteration-count: infinite;
 }
 
-svg:hover circle {
+// svg:hover circle {
+//   animation: hideshow 3s ease-in-out;
+//   animation-iteration-count: infinite;
+// }
+
+svg circle {
   animation: hideshow 3s ease-in-out;
   animation-iteration-count: infinite;
 }
