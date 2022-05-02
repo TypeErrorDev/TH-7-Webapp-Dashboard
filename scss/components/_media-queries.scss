@@ -11,8 +11,8 @@
     display: inline-block;
   }
   .grid-container {
-    grid-template-columns: repeat(3, auto);
-    grid-template-areas: "header header", "nav main";
+    grid-template-columns: 75px repeat(3, auto);
+    grid-template-areas: "header header" "nav main";
   }
   .grid-header {
     grid-column-start: 1;
