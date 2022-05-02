@@ -537,13 +537,6 @@ h3 {
   margin-bottom: 10px;
 }
 
-#myChart,
-#daily-chart,
-#mobile-chart {
-  width: 320px;
-  height: 150px;
-}
-
 .autocomplete {
   /*the container must be positioned relative:*/
   position: relative;
@@ -583,11 +576,11 @@ h3 {
 
 @media screen and (min-width: 768px) {
   .widget-container-full {
-    width: 91vw;
+    width: 90vw;
   }
 
   .widget-container-half {
-    width: 44vw;
+    width: 43vw;
   }
 
   .recent-karot {
