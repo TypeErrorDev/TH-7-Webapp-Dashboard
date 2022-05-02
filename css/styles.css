@@ -303,6 +303,10 @@ svg:hover[class=bell-icon] {
   height: 60px;
 }
 
+.social-circle {
+  fill: #fff;
+}
+
 .profile-image {
   border-radius: 50%;
   width: 75px;
