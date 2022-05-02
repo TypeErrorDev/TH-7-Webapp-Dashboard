@@ -339,6 +339,7 @@ buttonSave.addEventListener("click", (e) => {
   localStorage.setItem("email", email.checked);
   localStorage.setItem("public", public.checked);
   localStorage.setItem("timezone", timezone.value);
+  console.log("Saved to localStorage");
 });
 
 // LISTEN FOR BUTTON CLICK AND CLEAR LOCAL STORAGE
@@ -352,4 +353,23 @@ cancel.addEventListener("click", () => {
   timezone.value = "Select a Timezone";
   // IF THIS IS THESE ARE THE ONLY ITEMS IN LOCAL STORAGE, USE THIS
   localStorage.clear();
+  console.log("Cleared localStorage");
 });
+
+function keepLocalStorage() {
+  if (localStorage.email === "true") {
+    email.checked = true;
+  } else {
+    email.checked = false;
+  }
+  if (localStorage.public === "true") {
+    public.checked = true;
+  } else {
+    public.checked = false;
+  }
+  if (localStorage.timezone) {
+    timezone.value = localStorage.timezone;
+  }
+}
+
+keepLocalStorage();

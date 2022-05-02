@@ -39,7 +39,7 @@
 @mixin social-status {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   height: 100px;
   width: 90%;

@@ -31,7 +31,7 @@ svg:hover[class="bell-icon"] {
 //   animation-iteration-count: infinite;
 // }
 
-svg circle {
+.bell-circle {
   animation: hideshow 3s ease-in-out;
   animation-iteration-count: infinite;
 }
@@ -51,6 +51,7 @@ svg circle {
 .social-svg {
   margin: 10px;
   width: 60px;
+  height: 60px;
 }
 .profile-image {
   border-radius: 50%;
